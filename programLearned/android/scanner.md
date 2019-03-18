@@ -227,6 +227,7 @@ protected void refreshSizes() {
 ```
 
 - 新增綠框(更新ondraw): 
+
 ```java
 public void onDraw(Canvas canvas) {
     this.setOnTouchListener(handleTouch);
