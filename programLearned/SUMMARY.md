@@ -25,7 +25,7 @@
         * [表單資料綁定](vue/basic/formDataBinding.md)
         * [TodoList製作](vue/basic/todoList.md)
     * [參考資料](vue/source.md)
-* [Bootstrap](bootstrap/README.md)
+* [Bootstrap 筆記](bootstrap/README.md)
     * [相關資源網站](bootstrap/source.md)
     * [安裝與開始](bootstrap/begin.md)
     * [CSS 基礎知識](bootstrap/css.md)
