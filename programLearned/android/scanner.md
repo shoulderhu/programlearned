@@ -63,7 +63,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 #### <a id="s3" href="#top">使用垂直掃描</a>
 - 於自己專案新創java檔案
 - 將此java類別 繼承 CaptureActivity
-- 於 AndroidManifest 內新增:
+- 於 AndroidManifest 內新增: 
 ```xml
 <activity
     android:name=".繼承的類別"
@@ -79,7 +79,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 #### <a id="s4" href="#top">更改掃瞄範圍</a>
 - 到 CameraPreview.java 內的 calculateFrames 方法內
 - 重新設定 framingRect
-- 例 :
+- 例 : 
 ```java
 private void calculateFrames() {
     if (containerSize == null || previewSize == null || displayConfiguration == null) {
@@ -124,7 +124,7 @@ private void calculateFrames() {
 #### <a id="s5" href="#top">觸碰改變掃瞄範圍</a>
 - 找到ViewfinderView.java
 - 新增宣告觸碰位置 : ```private int gTouchX1, gTouchY1, gTouchX2, gTouchY2;```
-- 得到觸碰座標 :
+- 得到觸碰座標 : 
 ```java
 private OnTouchListener handleTouch = new OnTouchListener() {
         @Override
@@ -160,7 +160,7 @@ private OnTouchListener handleTouch = new OnTouchListener() {
 
 - 於ViewfinderView.java 的 onDraw函數內加入(refreshSizes之前) : ```this.setOnTouchListener(handleTouch);```
 - 於CameraPreview.java 新增宣告(四邊) : ```public int newTop = 0,newBottom = 0,newLeft = 0,newRight = 0;```
-- 於getFramingRect()與getPreviewFramingRect()加入 :
+- 於getFramingRect()與getPreviewFramingRect()加入 : 
 ```java
 if(framingRect != null && newTop!=0 && newRight!=0 && newBottom!=0 && newLeft!=0){
     framingRect.set(newLeft,newTop,newRight,newBottom);
@@ -171,7 +171,7 @@ if(previewFramingRect != null && newTop!=0 && newRight!=0 && newBottom!=0 && new
 }
 ```
 
-- 改變ViewfinderView.java 的 refreshSizes() :
+- 改變ViewfinderView.java 的 refreshSizes() : 
 ```java
 protected void refreshSizes() {
    if(cameraPreview == null) {
@@ -225,7 +225,7 @@ protected void refreshSizes() {
   }
 }
 ```
-- 新增綠框(更新ondraw):
+- 新增綠框(更新ondraw): 
 ```java
 public void onDraw(Canvas canvas) {
     this.setOnTouchListener(handleTouch);
