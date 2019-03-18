@@ -4,6 +4,7 @@
 
 #### 建立功能
 - 1.在登入後主頁面增加 CountDownTimer
+
 ```java
 private static CountDownTimer timer;
 private static Context logoutContext;
