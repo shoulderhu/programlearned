@@ -16,15 +16,15 @@
     - 讓使用者無需再去尋找新檔案安裝更新
 
 #### 實現:
-- 1.在網路資料夾創建version.xml
+- 1.在網路資料夾創建version.xml：
 ```xml
 <version>
     <versionCode>20181009</versionCode>
 </version>
 ```
 
-- 2.新增各項變數與設定androidManifest.xml:
-    - versionName(以版本為主):
+- 2.新增各項變數與設定androidManifest.xml：
+    - versionName(以版本為主)
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mio.chemotherapy"
@@ -33,7 +33,7 @@
 </manifest>
 ```
 
-- 新增權限androidManifest.xml:
+- 新增權限androidManifest.xml：
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
@@ -52,7 +52,7 @@
 </provider>
 ```
 
-- 新增參數檔:file_paths.xml:
+- 新增參數檔:file_paths.xml：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -61,8 +61,9 @@
 </paths>
 ```
 
-- 新增進度條視窗download_apk_dialog.xml:
-    - 修改進度條樣式參考網址:https://stackoverflow.com/questions/18800290/how-to-change-progressbar-color
+- 新增進度條視窗download_apk_dialog.xml：
+- 修改進度條樣式參考網址：
+    - https://stackoverflow.com/questions/18800290/how-to-change-progressbar-color
 
 ```xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -117,7 +118,7 @@
 <string name="wait">下載中，請稍後...</string>
 ```
 
-- 主程式:
+- 主程式：
 
 ```java
 DownloadManager DM ;
@@ -143,7 +144,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-- 3.設置判斷安裝新版本checkNewVersion方法:
+- 3.設置判斷安裝新版本checkNewVersion方法：
 
 ```java
 private void checkNewVersion(){
@@ -223,8 +224,8 @@ private static boolean compare(String newVersionCode,String oldVersionCode) {
 }
 ```
 
-- 4.設置安裝新版本DownloadNewVersion方法與DialogFragmentHelper.java:
-- DownloadNewVersion:
+- 4.設置安裝新版本DownloadNewVersion & DialogFragmentHelper.java
+- DownloadNewVersion：
 
 ```java
 private void DownloadNewVersion(){
@@ -312,7 +313,7 @@ public class DialogFragmentHelper extends DialogFragment{
 
 ```
 
-- 5.檢視手機android版本問題:
+- 5.檢視手機android版本問題：
 
 ```java
 //Android 6.0檢查是否開啟儲存(WRITE_EXTERNAL_STORAGE)的權限，若否，出現詢問視窗
@@ -349,7 +350,7 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
 }
 ```
 
-- 6.設置下載項目所需設定DownloadManagerEnqueue方法:
+- 6.設置下載項目所需設定DownloadManagerEnqueue方法：
 
 ```java
 private void DownloadManagerEnqueue(){
@@ -396,7 +397,7 @@ class DownloadObserver extends ContentObserver{
 }
 ```
 
-- SharedPreferencesHelper.java:
+- SharedPreferencesHelper.java：
 
 ```java
 package com.rayhahah.qrcodedemo;
@@ -426,7 +427,7 @@ public class SharedPreferencesHelper {
     }//取得DownloadID
 }
 ```
-- DownloadCompleteReceiver.java:
+- DownloadCompleteReceiver.java：
 
 ```java
 package com.rayhahah.qrcodedemo;
