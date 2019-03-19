@@ -51,6 +51,7 @@
     * [定時登出](android/timerLogOut.md)
     * [WebView使用介紹](android/webView.md)
     * [surfaceView使用摘錄](android/view&surfaceView.md)
+    * [內網自動更新](android/autoUpdate.md)
     * [參考資料](android/source.md)
 * [Ios 筆記](ios/README.md)
 * [gitbook 製作與離線版](gitbook/README.md)
