@@ -42,7 +42,7 @@
     * [不同的呈現(display)方式](bootstrap/display.md)
     * [容器對齊方式](bootstrap/containerAlign.md)
     * [文字(背景顏色)對齊與樣式](bootstrap/textChange.md)
-    * [導覽列應用]bootstrap/(navBar.md)
+    * [導覽列應用](bootstrap/navBar.md)
     * [參考資源](bootstrap/resource.md)
 * [Android 筆記](android/README.md)
     * [安裝與說明](android/begin.md)
