@@ -96,7 +96,7 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
     private void draw() {
         try {
             mCanvas = mHolder.lockCanvas();
-            mCanvas.drawColor(Color.WHITE);
+            mCanvas.drawColor(Color.BLACK);
             mCanvas.drawPath(mPath, mPaint);
         } catch (Exception e) {
             e.printStackTrace();
