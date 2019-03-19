@@ -26,6 +26,7 @@
 
 - .gitbook.yaml 為 gitbook設定檔
 - .gitbook.yaml 範例 :
+
 ```
 # Root directory to locate the content
 # Default is the root directory of the repository.
@@ -61,6 +62,7 @@ structure:
 - 安裝 calibre
 - 設定book.json檔(注意要放在同一目錄資料夾)
 - book.json 範例 : 裡面包含pdf設定 與 plugin 插件
+
 ```json
 {   
     "title": "Bootstrap 4 指南",
