@@ -15,8 +15,8 @@
 ```
 
 - SUMMARY.md 範例 :
-```markdown
 
+```markdown
 # Summary
 
 * [我的首頁](README.md)
