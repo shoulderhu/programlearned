@@ -16,7 +16,7 @@ Android提供了View進行繪圖處理，View可以滿足大部分的繪圖需�
 - View 主要適用於主動更新的情況下，而SurfaceView 主要適用於被動更新，例如頻繁地刷新。
 - View 在主線程中對畫面進行刷新，而SurfaceView 通常會通過一個子線程來進行頁面的刷新。
 - View在繪圖時沒有使用雙緩衝機制，而SurfaceView在底層實現機制中就已經實現了雙緩衝機制。
-總結:如果你的自定義View需要頻繁刷新，或者刷新時數據處理量比較大，那麼你就可以考慮使用SurfaceView來取代View了
+- 總結:若自定義View需頻繁刷新，或刷新數據處理量較大，則可考慮使用SurfaceView取代View
 
 #### SurfaceView 模板範例
 
