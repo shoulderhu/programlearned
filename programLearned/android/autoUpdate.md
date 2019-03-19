@@ -1,21 +1,21 @@
 ## 內網自動更新 android 實現步驟
 
-流程:
-1. 至網路位置比對版本號
+- 流程:
+- 1. 至網路位置比對版本號
     - 原因:
     - 避免套件之後無法存取
     - 避免增加apk的檔案變大
     - 減少解析apk時間與增加UX
-2. 跳出alertDialog詢問使用者是否安裝新版本
+- 2. 跳出alertDialog詢問使用者是否安裝新版本
     - 確認使用者有業務需求需要更新
-3. 若有相同apk檔案則刪除
+- 3. 若有相同apk檔案則刪除
     - 避免內存過多無法存取新APK
-4. 進行下載(開啟進度條視窗)
+- 4. 進行下載(開啟進度條視窗)
     - 讓使用者看到進度避免更新失敗
-5. 自動開啟
+- 5. 自動開啟
     - 讓使用者無需再去尋找新檔案安裝更新
 
-實現:
+#### 實現:
 - 1.在網路資料夾創建version.xml
 ```xml
 <version>
@@ -24,7 +24,7 @@
 ```
 
 - 2.新增各項變數與設定androidManifest.xml:
-versionName(以版本為主):
+    - versionName(以版本為主):
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mio.chemotherapy"
@@ -33,7 +33,8 @@ versionName(以版本為主):
 </manifest>
 ```
 
-新增權限androidManifest.xml:
+- 新增權限androidManifest.xml:
+
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -51,7 +52,8 @@ versionName(以版本為主):
 </provider>
 ```
 
-新增參數檔:file_paths.xml:
+- 新增參數檔:file_paths.xml:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
@@ -59,8 +61,9 @@ versionName(以版本為主):
 </paths>
 ```
 
-新增進度條視窗download_apk_dialog.xml:
-修改進度條樣式參考網址:https://stackoverflow.com/questions/18800290/how-to-change-progressbar-color
+- 新增進度條視窗download_apk_dialog.xml:
+    - 修改進度條樣式參考網址:https://stackoverflow.com/questions/18800290/how-to-change-progressbar-color
+
 ```xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -107,13 +110,15 @@ versionName(以版本為主):
 </RelativeLayout>
 ```
 
-新增字串參數:res > values > strings.xml
+- 新增字串參數:res > values > strings.xml
+
 ```xml
 <string name="update">下载更新</string>
 <string name="wait">下載中，請稍後...</string>
 ```
 
-主程式:
+- 主程式:
+
 ```java
 DownloadManager DM ;
 DownloadManager.Request request;
@@ -139,6 +144,7 @@ protected void onCreate(Bundle savedInstanceState) {
 ```
 
 - 3.設置判斷安裝新版本checkNewVersion方法:
+
 ```java
 private void checkNewVersion(){
     Boolean haveNewVersion;
@@ -218,7 +224,8 @@ private static boolean compare(String newVersionCode,String oldVersionCode) {
 ```
 
 - 4.設置安裝新版本DownloadNewVersion方法與DialogFragmentHelper.java:
-DownloadNewVersion:
+- DownloadNewVersion:
+
 ```java
 private void DownloadNewVersion(){
     //判斷檔案是否已存在,若存在需先刪除,避免內存塞滿
@@ -259,7 +266,8 @@ private void DownloadNewVersion(){
 }
 ```
 
-DialogFragmentHelper.java:
+- DialogFragmentHelper.java:
+
 ```java
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -305,6 +313,7 @@ public class DialogFragmentHelper extends DialogFragment{
 ```
 
 - 5.檢視手機android版本問題:
+
 ```java
 //Android 6.0檢查是否開啟儲存(WRITE_EXTERNAL_STORAGE)的權限，若否，出現詢問視窗
 private void CheckStoragePermission() {
@@ -341,6 +350,7 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
 ```
 
 - 6.設置下載項目所需設定DownloadManagerEnqueue方法:
+
 ```java
 private void DownloadManagerEnqueue(){
     //創建目錄
@@ -386,7 +396,8 @@ class DownloadObserver extends ContentObserver{
 }
 ```
 
-SharedPreferencesHelper.java:
+- SharedPreferencesHelper.java:
+
 ```java
 package com.rayhahah.qrcodedemo;
 import android.content.Context;
@@ -415,8 +426,8 @@ public class SharedPreferencesHelper {
     }//取得DownloadID
 }
 ```
+- DownloadCompleteReceiver.java:
 
-DownloadCompleteReceiver.java
 ```java
 package com.rayhahah.qrcodedemo;
 
