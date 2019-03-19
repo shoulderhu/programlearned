@@ -101,6 +101,7 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+            //確保每次都能將內容提交故須放在finally
             if (null != mCanvas) {
                 mHolder.unlockCanvasAndPost(mCanvas);
             }
