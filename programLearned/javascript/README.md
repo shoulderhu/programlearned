@@ -9,7 +9,7 @@
 
 |基礎區(javascript:ECMAScript 5)|
 | :--- |
-|<a href="#a1">使用javascript的方式(寫入或嵌入)</a>|
+|[使用javascript的方式(寫入或嵌入)](#a1)|
 |<a href="#a2">宣告基本類型(string,number,object,array,variable)與function注意事項</a>|
 |<a href="#a3">this解說</a>|
 |<a href="#a4">取得類型名稱</a>|
