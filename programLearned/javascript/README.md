@@ -3,26 +3,26 @@
 |名稱|資源連結|
 | :--- | :--- |
 |javascript|https://www.fooish.com/javascript/function.html |
-|javascript|https://www.w3schools.com/js/js_examples.asp <br>|
+|javascript|https://www.w3schools.com/js/js_examples.asp|
 |ECMAScript|http://es6.ruanyifeng.com/#docs/destructuring|
 
 |基礎區(javascript:ECMAScript 5)|
 | :--- |
-|<a href="#a1">使用javascript的方式(寫入或嵌入)</a><br>|
-|<a href="#a2">宣告基本類型(string,number,object,array,variable)與function注意事項</a><br>|
-|<a href="#a3">this解說</a><br>|
-|<a href="#a4">取得類型名稱</a><br>|
-|<a href="#a5">改變css樣式</a><br>|
-|<a href="#a6">輸出的文字的各個方式(alert,console,document)</a><br>|
-|<a href="#a7"> ++ 與 - - 注意事項</a><br>|
-|<a href="#a8">string常用屬性</a><br>|
-|<a href="#a9">Math常用屬性</a><br>|
-|<a href="#a10">Date常用屬性</a><br>|
-|<a href="#a11">Array常用屬性</a><br>|
-|<a href="#a11-2">Array-list用法</a><br>|
-|<a href="#a12">常用的幾種迴圈與敘述(if.else if.else.break.continue,switch)</a><br>|
-|<a href="#a13">try catch用法</a><br>|
-|<a href="#a14">Iterator用法</a><br>|
+|<a href="#a1">使用javascript的方式(寫入或嵌入)</a>|
+|<a href="#a2">宣告基本類型(string,number,object,array,variable)與function注意事項</a>|
+|<a href="#a3">this解說</a>|
+|<a href="#a4">取得類型名稱</a>|
+|<a href="#a5">改變css樣式</a>|
+|<a href="#a6">輸出的文字的各個方式(alert,console,document)</a>|
+|<a href="#a7"> ++ 與 - - 注意事項</a>|
+|<a href="#a8">string常用屬性</a>|
+|<a href="#a9">Math常用屬性</a>|
+|<a href="#a10">Date常用屬性</a>|
+|<a href="#a11">Array常用屬性</a>|
+|<a href="#a11-2">Array-list用法</a>|
+|<a href="#a12">常用的幾種迴圈與敘述(if.else if.else.break.continue,switch)</a>|
+|<a href="#a13">try catch用法</a>|
+|<a href="#a14">Iterator用法</a>|
 |<a href="#a15">function閉包用法</a>|
 |<a href="#a16">function caLLback .call() .apply()用法</a>|
 |<a href="#a17">convert the js object to JSON</a>|
@@ -40,36 +40,36 @@
 
 |應用知識|
 | :--- |
-|<a href="#c1">取得目前的row數</a><br>|
-|<a href="#c2">得到select的 value</a><br>|
-|<a href="#c3">javascript = = 與 = = = 的差別:</a><br>|
-|<a href="#c4">鍵盤按鍵觸發</a><br>|
-|<a href="#c5">输出每个 li 元素的文本</a><br>|
-|<a href="#c6">抓取name=cancelBox的每一個input輸入框</a> <br>|
-|<a href="#c7">將序號重新排列 </a><br>|
-|<a href="#c8">將array裡塞入其他字串 </a><br>|
-|<a href="#c9">window.open應用 </a><br>|
-|<a href="#c10">基本陣列宣告方法 </a><br>|
-|<a href="#c11">二維陣列</a><br>|
-|<a href="#c12">用二維陣列存放所有text:tdtext[第幾個tr][第幾個td]</a><br>|
-|<a href="#c13">.serialize()序列化表單值</a><br>|
-|<a href="#c14">eval():可计算某个字符串，并执行其中的的JavaScript 代码。</a><br> |
-|<a href="#c15">select option新增.清空</a><br>|
-|<a href="#c16">避免Enter直接submit</a><br>|
-|<a href="#c17">增加row於table的第一行</a><br>|
-|<a href="#c18">當按下enter時執行doquery函數</a><br>|
-|<a href="#c19">array .join方法:返回字串 .push:加入陣列</a><br>|
-|<a href="#c20">若name或id只有一個時可以直接使用name呼叫屬性</a><br>|
-|<a href="#c21">jQuery收合延展功能:http://jsfiddle.net/eK8X5/10885/</a><br>|
-|<a href="#c22">字串拆解(subString)</a><br>|
-|<a href="#c23">用name檢查多個checkbox是否勾選</a><br>|
-|<a href="#c24">處理javascript浮點數精準問題:</a><br>|
-|<a href="#c25">轉換溫度(零式與攝氏):</a><br>|
-|<a href="#c26">javascript:跳轉上下頁面:</a><br>|
-|<a href="#c27">window(self,top,parent)知識</a><br>|
-|<a href="#c28">javascript:讀取文字檔檔案</a><br>|
-|<a href="#c29">javascript:製作基本頁籤</a><br>|
-|<a href="#c30">Fullcalender使用範例</a><br>|
+|<a href="#c1">取得目前的row數</a>|
+|<a href="#c2">得到select的 value</a>|
+|<a href="#c3">javascript = = 與 = = = 的差別:</a>|
+|<a href="#c4">鍵盤按鍵觸發</a>|
+|<a href="#c5">输出每个 li 元素的文本</a>|
+|<a href="#c6">抓取name=cancelBox的每一個input輸入框</a> |
+|<a href="#c7">將序號重新排列 </a>|
+|<a href="#c8">將array裡塞入其他字串 </a>|
+|<a href="#c9">window.open應用 </a>|
+|<a href="#c10">基本陣列宣告方法 </a>|
+|<a href="#c11">二維陣列</a>|
+|<a href="#c12">用二維陣列存放所有text:tdtext[第幾個tr][第幾個td]</a>|
+|<a href="#c13">.serialize()序列化表單值</a>|
+|<a href="#c14">eval():可计算某个字符串，并执行其中的的JavaScript 代码。</a> |
+|<a href="#c15">select option新增.清空</a>|
+|<a href="#c16">避免Enter直接submit</a>|
+|<a href="#c17">增加row於table的第一行</a>|
+|<a href="#c18">當按下enter時執行doquery函數</a>|
+|<a href="#c19">array .join方法:返回字串 .push:加入陣列</a>|
+|<a href="#c20">若name或id只有一個時可以直接使用name呼叫屬性</a>|
+|<a href="#c21">jQuery收合延展功能:http://jsfiddle.net/eK8X5/10885/</a>|
+|<a href="#c22">字串拆解(subString)</a>|
+|<a href="#c23">用name檢查多個checkbox是否勾選</a>|
+|<a href="#c24">處理javascript浮點數精準問題:</a>|
+|<a href="#c25">轉換溫度(零式與攝氏):</a>|
+|<a href="#c26">javascript:跳轉上下頁面:</a>|
+|<a href="#c27">window(self,top,parent)知識</a>|
+|<a href="#c28">javascript:讀取文字檔檔案</a>|
+|<a href="#c29">javascript:製作基本頁籤</a>|
+|<a href="#c30">Fullcalender使用範例</a>|
 
 將option指向初始位置
 document.getElementById("xxxx").selectedIndex = 0;
