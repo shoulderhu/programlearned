@@ -100,7 +100,7 @@ SheetNo.selectedIndex
 嵌入式:
 <script src="myScript.js"></script>
 ```
-<==============================================><br>
+---
 #### <a id="a2" href="#top">宣告基本類型(string,number,object,array,variable)與function注意事項</a>
 ```
 <script>
@@ -198,7 +198,7 @@ function getScore () {
 
 </script>
 ```
-<============================================================><br>
+---
 #### <a id="a3" href="#top">this解說:https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this</a>
 ```
 **Javascript裡的this看的是究竟是誰調用該函式，而不是看該函式被定義在哪個物件內**
@@ -304,13 +304,13 @@ ex:
 
 		obj1.f.call(obj2); //利用call指派f的this為指向obj2，故輸出為30
 ```
-<=================================================><br>
+---
 #### <a id="a4" href="#top">取得類型名稱</a>
 ```
 typeof 放入欲取得的類型
 ex:console.log(typeof "") => 輸出:string 
 ```
-<====================================================><br>
+---
 #### <a id="a5" href="#top">改變css樣式</a>
 ```
 function change(){
@@ -324,7 +324,7 @@ function change(){
     foo.style.cssText = 'font-size: 20px; color: purple;';// 將 foo 的字體大小設為 20px、字體顏色設為紫色
 }
 ```
-<=======================================================><br>
+---
 #### <a id="a6" href="#top">輸出的文字的各個方式(alert,console,document)</a>
 ```
 <script>
@@ -336,7 +336,7 @@ window.alert(5 + 6);
 console.log(5 + 6);
 </script>
 ```
-<=====================================================><br>
+---
 #### <a id="a7" href="#top"> ++ 與 -- 的注意事項</a>
 ```
 //++--放後面:執行後再加(減),++--放前面:執行前先加(減)在輸出
@@ -346,7 +346,7 @@ document.getElementById("demo1").innerHTML = y++; //輸出5(因為執行完敘�
 document.getElementById("demo2").innerHTML = y; //輸出6
 </script>
 ```
-<======================================================><br>
+---
 #### <a id="a8" href="#top">string常用屬性</a>
 ```
 *length:*
@@ -412,7 +412,7 @@ function myFunction() {
  var x=str.substr(1,3);//x=894,x[0]=8(取第一個字元(string))
 </script>
 ```
-<=======================================================><br>
+---
 #### <a id="a9" href="#top">Math常用屬性</a>
 ```
 *.PI:*
@@ -456,7 +456,7 @@ document.getElementById("demo").innerHTML =
 Math.floor(Math.random() * 10) + 1;
 </script>
 ```
-<========================================================><br>
+---
 #### <a id="a10" href="#top">Date常用屬性</a>
 ```
 *取得今天時間*
@@ -499,7 +499,7 @@ function checkTime(i) {
 <div id="txt"></div>
 </body>
 ```
-<============================================================><br>
+---
 #### <a id="a11" href="#top">Array常用屬性</a>
 ```
 *.concat(可放多個array):合併陣列(依序往後加)*
@@ -589,7 +589,7 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits.toString();//Banana,Orange,Apple,Mango
 </script>
 ```
-<====================================================><br>
+---
 #### <a id="a11-2" href="#top">Array-list用法</a>
 ```javascript
 
@@ -603,7 +603,7 @@ list.push({ date: '12/1/2011', reading: 3, id: 20056 });
 
 alert(list[1].date);
 ```
-<====================================================><br>
+---
 #### <a id="a12" href="#top">常用的幾種迴圈與敘述(if.else if.else.break.continue,switch)</a>
 ```
 *for:*
@@ -653,7 +653,7 @@ for (x in person) {
     txt += person[x] + " ";
 }
 ```
-<======================================================><br>
+---
 #### <a id="a13" href="#top">try catch用法</a>
 ```javascript
  var txt = "";
@@ -670,7 +670,7 @@ for (x in person) {
         }
     }
 ```
-<======================================================><br>
+---
 #### <a id="a14" href="#top">Iterator用法</a>
 ```javascript
     var c = console;
@@ -709,7 +709,7 @@ for (x in person) {
   */
    
 ```
-<======================================================><br>
+---
 #### <a id="a15" href="#top">function閉包用法</a>
 ```javascript
 ex1:
@@ -773,7 +773,7 @@ alert(counter1.value()); /* Alerts 1 */
 alert(counter2.value()); /* Alerts 0 */
 */
 ```
-<======================================================><br>
+---
 #### <a id="a16" href="#top">function callback用法</a>
 ```javascript
 //首先先技術解釋
@@ -849,13 +849,13 @@ meowSay.apply({say:'MEOW!!'} , [1 , 2 , 3])
 //区分apply,call就一句话,
 　　foo.call(this, arg1,arg2,arg3) == foo.apply(this, arguments)==this.foo(arg1, arg2, arg3)
 ```
-<==================================================><br>
+---
 #### <a id="a17" href="#top">convert the js object to JSON</a><br/>
 ```javascript
 var j={"name":"binchen"};
 JSON.stringify(j); // '{"name":"binchen"}'
 ```
-<==================================================><br>
+---
 #### <a id="a18" href="#top">Check string matches a regex in JS</a><br/>
 ```javascript
 /^([a-z0-9]{5,})$/.test('abc1');   // false
@@ -864,7 +864,7 @@ JSON.stringify(j); // '{"name":"binchen"}'
 
 /^([a-z0-9]{5,})$/.test('abc123');   // true
 ```
-<==================================================><br>
+---
 #### <a id="a19" href="#top">IIFE用法:即刻執行函數(immediately invoked function expression)</a><br/>
 ```javascript
 //一個一般的函式會是以下這樣
@@ -949,7 +949,7 @@ funcC('hello!');
 //(3):''
 
 ```
-<==================================================><br>
+---
 #### <a id="a20" href="#top">雙重function函式使用</a><br/>
 1.雙重函式之使用
 ```javascript
@@ -998,7 +998,7 @@ function b(aaa) {
 }
 ```
 
-<==================================================><br>
+---
 #### <a id="a21" href="#top">canvas畫圖(神奇寶貝球)</a>
 
 - 需先將html標籤寫出來 : ```<canvas id="myCanvas"></canvas>```
@@ -1114,7 +1114,7 @@ ctx.arc(200,200,15,0,Math.PI*2)
 ctx.stroke()
 ```
 
-<==================================================><br>
+---
 #### <a id="a0601" href="#top">let,const變數語法</a><br/>
 let變數:
 ```javascript
@@ -1183,7 +1183,7 @@ const foo = Object.freeze({});
 // 严格模式时，该行会报错
 foo.prop = 123;
 ```
-<==================================================><br>
+---
 #### <a id="a0602" href="#top">變數解構賦值(set)</a><br/>
 ```javascript
 舊的作法:
@@ -1280,7 +1280,7 @@ l // 'world'
 
 
 ```
-<==================================================><br>
+---
 #### <a id="a0610" href="#top">yeild與Generator</a><br/>
 ```javascript
 yeild與Generator必須一起生存
@@ -1315,7 +1315,7 @@ var foo = function *() {
     var b = foo.next(3);//b.value=4:x=1,y=3;
     var c = foo.next(4);//c.value=4(yield (x + y)=4)
 ```
-<==================================================><br>
+---
 #### <a id="a0611" href="#top">promise的使用</a><br/>
 ```javascript
 const reqPromise = async 參數 => new Promise((resolve, reject) => {
@@ -1328,7 +1328,7 @@ const reqPromise = async 參數 => new Promise((resolve, reject) => {
   return [error, null]
 ```
 
-<===================================================><br>
+---
 #### <a id="c1" href="#top">取得目前的row數</a>
 ```
 var num = document.getElementById("mytable").rows.length;
@@ -1347,7 +1347,7 @@ function myFunction() {
 }
 </script>
 ```
-<=======================================================><br>
+---
 #### <a id="c2" href="#top">得到select的 value</a>
 ```
 <script type="text/javascript">
@@ -1367,7 +1367,7 @@ function myFunction() {
   </select>
  </body>
  ```
-<======================================================><br>
+---
 #### <a id="c3" href="#top">javascript = = 與 = = = 的差別:</a>
 ```
 兩個等於（==）會對被判別的變數做轉換型別的動作（coercion又稱為implicit type conversion）。
@@ -1399,7 +1399,7 @@ NaN === NaN //false
  
 因此只能使用isNaN()這個Function來判別。 
 ```
-<===============================================================><br>
+---
 #### <a id="c4" href="#top">鍵盤按鍵觸發:</a>
 ```
 keypress
@@ -1417,7 +1417,7 @@ keypress
 		}
 	}); 
 ```
-<===========================================================><br>
+---
 #### <a id="c5" href="#top">输出每个 li 元素的文本：</a>
 ```
 $("button").click(function(){
@@ -1426,7 +1426,7 @@ $("button").click(function(){
   });
 });
 ```
-<============================================================><br>
+---
 #### <a id="c6" href="#top">抓取name=cancelBox的每一個(.each())input輸入框 </a>
 ```
 .prop代表input裡面的屬性
@@ -1441,7 +1441,7 @@ $("input[name='cancelBox']").each(function(){
 				return;
 			}
 ```
-<======================================================><br>
+---
 #### <a id="c7" href="#top">將序號重新排列 </a>
 ```
 	var rowCount = document.getElementById("tabContent").rows.length;
@@ -1450,7 +1450,7 @@ $("input[name='cancelBox']").each(function(){
 		$("td[name='count']:eq("+q+")").text(rowCount-q);	
 	};
 ```
-<=======================================================><br>
+---
 #### <a id="c8" href="#top">將array裡塞入其他字串 </a>
 ```
 <button onclick="myFunction()">Try it</button>
@@ -1476,7 +1476,7 @@ document.write(arr.join("."))
 輸出:George.John.Thomas
 </script>
 ```
-<==============================================================><br>
+---
 #### <a id="c9" href="#top">window.open()在jsp應用 </a>
 :http://www.w3school.com.cn/jsref/met_win_open.asp#windowfeatures
 ```
@@ -1492,13 +1492,13 @@ document.write(arr.join("."))
 	 	 var sDate = document.getElementById("sDate").value;	
 	 	 var eDate = document.getElementById("eDate").value;
 		var url = 
-	    		"<%=request.getContextPath()%>/html/servlet/HttpDispatcher/Csr050105/detail?" +
+	    		"<%=request.getContextPath()%>/html/servlet/HttpDispatcher/???" +
 	    		"potName=" + potName+ "&sDate=" + sDate+"&eDate=" + eDate+"&POTDEPT=" + POTDEPT; 		
 		printWindow = window.open(url,"_blank","toolbar=0, location=0, directories=no, status=no, menubar=0, scrollbars=0, resizable=0, copyhistory=yes, width=950, height=720,left=0,top=0");
 	}
 
 用window.open連結form表單並先跳至等待載入的頁面(Emr_WindowOpen.jsp)再轉至form的submit:
-		window.open('<%=request.getContextPath()%>/html/emr/pages/Emr_WindowOpen.jsp','ExportPDF'+winCount,'top=0, left=0, resizable=yes');
+		window.open('<%=request.getContextPath()%>/???.jsp','ExportPDF'+winCount,'top=0, left=0, resizable=yes');
 		var AjaxParam = new Array();
 		document.getElementById("id_div_Ajaxparam").innerHTML = "";
 		AjaxParam.push("<form id='id_form_Ajaxparam' name='pdf'>");
@@ -1509,14 +1509,14 @@ document.write(arr.join("."))
 		document.getElementById("id_div_Ajaxparam").innerHTML = AjaxParam.join("");
 		pdf.target="ExportPDF"+winCount;
 		pdf.method="POST"; 	
-		pdf.action = "<%=request.getContextPath()%>/html/servlet/HttpDispatcher/Emr0104/doPrint";
+		pdf.action = "???";
 		pdf.submit();
 
 Emr_WindowOpen.jsp:
 	<%@ page language="java" contentType="text/html; charset=BIG5" pageEncoding="BIG5" %>
 	<body style="background-color:#F5FFD9;">載入中，請等待...</body>
 ```
-<==============================================================><br>
+---
 #### <a id="c10" href="#top">基本陣列宣告方法 </a>
 ```
 var person = [];
@@ -1526,7 +1526,7 @@ person[2] = 46;
 var x = person.length;         // person.length will return 3
 var y = person[0];             // person[0] will return "John"
 ```
-<================================================================><br>
+---
 #### <a id="c11" href="#top">二維陣列:</a>
 ```
 var tdtext=[];
@@ -1535,7 +1535,7 @@ for (var c = 0 ; c <= d2 ; c++) {
   tdtext[c] = new Array(d2);
 }
 ```
-<==================================================================><br>
+---
 #### <a id="c12" href="#top">用二維陣列存放所有text:tdtext[第幾個tr][第幾個td]</a>
 ```
 var tdtext=[];
@@ -1557,7 +1557,7 @@ $("tr[name='trbox']").each(function(){
   alert(tdtext[0][pot]);
 }
 ```
-<====================================================================><br>
+---
 #### <a id="c13" href="#top">.serialize()序列化表單值:</a>
 ```
 Form.serialize($("id_form_Ajaxparam"));//將指定的form放入序列化中
@@ -1571,7 +1571,7 @@ $("div").text($("form").serialize());
 
 輸出:FirstName=Bill&LastName=Gates
 ```
-<====================================================================><br>
+---
 #### <a id="c14" href="#top">eval():可计算某个字符串，并执行其中的的 JavaScript 代码。</a>
 ```
 eval("x=10;y=20;document.write(x*y)")
