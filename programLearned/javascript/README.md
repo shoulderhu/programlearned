@@ -91,7 +91,7 @@ document.getElementById("xxx").style.display="block";
 var SheetNo = document.getElementById("SheetNo");
 SheetNo.selectedIndex
 <================================================><br>
-<a id="a1" href="#top">使用javascript的方式(寫入或嵌入)</a>
+<a name="a1" href="#top">使用javascript的方式(寫入或嵌入)</a>
 ```
 寫入式:
 <script>//內容</script>
