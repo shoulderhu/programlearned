@@ -90,8 +90,9 @@ document.getElementById("xxx").style.display="block";
 查看選單的指標
 var SheetNo = document.getElementById("SheetNo");
 SheetNo.selectedIndex
-<================================================><br>
-#### <a name="a1" href="#top">使用javascript的方式(寫入或嵌入)</a>
+
+---
+#### <a id="a1" href="#top">使用javascript的方式(寫入或嵌入)</a>
 ```
 寫入式:
 <script>//內容</script>
