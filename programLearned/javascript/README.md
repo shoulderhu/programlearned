@@ -1,14 +1,9 @@
-# javascript,jquery
-### javascript,jquery 目錄:
-<!--more-->
-<style type="text/css">a{font-weight:700;}</style>
-<a id="top"></a>
+### 目錄:
 
 |名稱|資源連結|
 | :--- | :--- |
 |javascript|https://www.fooish.com/javascript/function.html |
 |javascript|https://www.w3schools.com/js/js_examples.asp <br>|
-|jQuery|https://www.fooish.com/jquery/<br>|
 |ECMAScript|http://es6.ruanyifeng.com/#docs/destructuring|
 
 |基礎區(javascript:ECMAScript 5)|
@@ -42,16 +37,6 @@
 |<a href="#a0602">變數解構賦值(set)</a>|
 |<a href="#a0610">yeild與Generator迭代</a>|
 |<a href="#a0611">promise的使用</a>|
-
-|基礎區(jquery)|
-| :--- |
-|<a href="#b1">與其他語言衝突$字符號解決辦法</a><br>|
-|<a href="#b2">基本操作與串接(Chaining)</a><br>|
-|<a href="#b3">選取DOM元素</a><br>|
-|<a href="#b4">屬性與樣式(Attributes,CSS),value取得與設定</a><br>|
-|<a href="#b5">篩選元素 (Traversing)</a><br>|
-|<a href="#b6">DOM 操作 (Manipulation)</a><br>|
-|<a href="#b7">事件處理 (Events)</a><br>|
 
 |應用知識|
 | :--- |
