@@ -1,5 +1,6 @@
 # Summary
 
+* [js 筆記](javascript/README.md)
 * [node 筆記](node/README.md)
     * [安裝與開始](node/begin.md)
     * [exports 的應用](node/exports.md)
