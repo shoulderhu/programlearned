@@ -1586,7 +1586,7 @@ document.write(eval(x+17))
 4
 27
 ```
-<======================================================================><br>
+---
 #### <a id="c15" href="#top">select option新增.清空</a>
 ```
 var option = document.createElement("option");//若要增加很多個OPTION必須依樣新增多個
@@ -1594,7 +1594,7 @@ var noteType = document.getElementById("SELECT ID");
 noteType.options.length = 0;//清空選項
 noteType.add(option);//新增選項
 ```
-<======================================================================><br>
+---
 #### <a id="c16" href="#top">避免Enter直接submit</a>
 ```
 if (event.keyCode == 13) 
@@ -1602,17 +1602,17 @@ if (event.keyCode == 13)
 event.returnValue = false;
 }
 ```
-<=======================================================================><br>
+---
 #### <a id="c17" href="#top">增加row於table的第一行</a>
 ```
 $("table名").prepend("<tr></tr>");
 ```
-<=======================================================================><br>
+---
 #### <a id="c18" href="#top">當按下enter時執行doquery函數</a>
 ```
 onkeydown="e = window.event;(e.keyCode==13)?doQuery():false;"	
 ```
-<=======================================================================><br>
+---
 #### <a id="c19" href="#top">array .join方法:返回字串 .push:加入陣列</a>
 ```
 var AjaxParam = new Array();
@@ -1621,25 +1621,25 @@ var AjaxParam = new Array();
 	AjaxParam.push("<input type='hidden' name='SheetNo' value='"+sheetNo+"' >");
 	AjaxParam.push("<input type='hidden' name='BeginDay' value='" + document.getElementById('BeginDay').value + "' >");
 	AjaxParam.push("<input type='hidden' name='EndDay' value='" + document.getElementById('EndDay').value + "' >");
-	AjaxParam.push("<input type='hidden' name='ChartNo' value='" + document.getElementById('ChartNo').value + "' >");
+	AjaxParam.push("<input type='hidden' name='???' value='" + document.getElementById('???').value + "' >");
 	AjaxParam.push("</form>");
 	document.getElementById("id_div_Ajaxparam").innerHTML = AjaxParam.join("");
 	form_tab.target="iframeTableView";//指定在名為iframeTableView的子視窗打開
 	form_tab.method="POST";//傳遞方式
-	form_tab.action = "<%=request.getContextPath()%>/html/servlet/HttpDispatcher/Emr0107/doTableView";  	
+	form_tab.action = "<%=request.getContextPath()%>/html/servlet/HttpDispatcher/???";  	
 	form_tab.submit();	
 ```
-<=====================================================================><br>
+---
 #### <a id="c20" href="#top">若name或id只有一個時可以直接使用name呼叫屬性</a>
 ```
 <form id='id_form_Ajaxparam' name='form_tab'></form>
 
 form_tab.target="iframeTableView";//指定在名為iframeTableView的子視窗打開
 form_tab.method="POST";//傳遞方式
-form_tab.action = "<%=request.getContextPath()%>/html/servlet/HttpDispatcher/Emr0107/doTableView";  	
+form_tab.action = "<%=request.getContextPath()%>/html/servlet/HttpDispatcher/???";  	
 form_tab.submit();
 ```
-<=====================================================================><br>
+---
 #### <a id="c21" href="#top">jQuery收合延展功能```:http://jsfiddle.net/eK8X5/10885/```</a>
 ```
 HTML:
@@ -1683,17 +1683,17 @@ $(".header").click(function () {
 
 });
 ```
-<================================================================><br>
+---
 #### <a id="c22" href="#top">字串拆解:</a>
 ```
 //代表從0開始屬到第三個開始擷取後五個字元
 idList.substr(3,5);
 ```
-<=================================================================><br>
+---
 #### <a id="c23" href="#top">用name檢查多個checkbox是否勾選:</a>
 ```
 //因有多個name=SheetNo的checkbox
-var sheetList = document.getElementsByName('SheetNo');
+var sheetList = document.getElementsByName('???');
 	var isChecked = false;
 	for(var i=0 ; i<sheetList.length ; i++){
 		if(sheetList[i].checked){
@@ -1702,11 +1702,10 @@ var sheetList = document.getElementsByName('SheetNo');
 		}
 	}
 	if(!isChecked){
-		alert("請勾選 「病歷類型」 後再執行查詢！");
 		return false;
 	}
 ```
-<==================================================================><br>
+---
 #### <a id="c24" href="#top">處理javascript浮點數精準問題:</a>
 ```
 //浮點數相加
@@ -1750,7 +1749,7 @@ function FloatDiv(arg1, arg2)
   }
 }
 ```
-<=================================================================><br>
+---
 #### <a id="c25" href="#top">轉換溫度(零式與攝氏):</a>
 ```
 <p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
@@ -1770,7 +1769,7 @@ function convert(degree) {
 }
 </script>
 ```
-<===============================================================><br>
+---
 #### <a id="c26" href="#top">跳轉頁面:</a>
 ```
 history.go() 方法可以用來明確指定瀏覽器要回去幾頁。
@@ -1791,7 +1790,7 @@ history.go(1);
 // 往回兩頁
 history.go(-2);
 ```
-<===================================================================><br>
+---
 #### <a id="c27" href="#top">window(self,top,parent)知識</a>
 ```
 window.self
@@ -1820,7 +1819,7 @@ var b = window.top!=window.self;
 document.write( "当前窗口是否在一个框架中："+b );
 </script>
 ```
-<===================================================================><br>
+---
 #### <a id="c28" href="#top">javascript:讀取文字檔檔案</a>
 ```
 You need to check for status 0 
@@ -1847,7 +1846,7 @@ And specify file:// in your filename:
 
 readTextFile("file:///C:/your/path/to/file.txt");
 ```
-<===================================================================><br>
+---
 #### <a id="c29" href="#top">javascript:製作基本頁籤</a>
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -1916,7 +1915,7 @@ function MouseOverTab(Index)
 }
 </script>
 ```
-<===================================================================><br>
+---
 #### <a id="c30" href="#top">fullcalendar使用範例</a>
 ```
 <!DOCTYPE html>
