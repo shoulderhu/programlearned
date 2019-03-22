@@ -1,5 +1,5 @@
 ### 目錄:
-<a name="top"></a>
+#### <a id="top">&nbsp;</a>
 
 |名稱|資源連結|
 | :--- | :--- |
@@ -91,7 +91,7 @@ document.getElementById("xxx").style.display="block";
 var SheetNo = document.getElementById("SheetNo");
 SheetNo.selectedIndex
 <================================================><br>
-<a name="a1" href="#top">使用javascript的方式(寫入或嵌入)</a>
+#### <a name="a1" href="#top">使用javascript的方式(寫入或嵌入)</a>
 ```
 寫入式:
 <script>//內容</script>
@@ -100,7 +100,7 @@ SheetNo.selectedIndex
 <script src="myScript.js"></script>
 ```
 <==============================================><br>
-<a id="a2" href="#top">宣告基本類型(string,number,object,array,variable)與function注意事項</a>
+#### <a id="a2" href="#top">宣告基本類型(string,number,object,array,variable)與function注意事項</a>
 ```
 <script>
 //可一次宣告多個類型
@@ -198,7 +198,7 @@ function getScore () {
 </script>
 ```
 <============================================================><br>
-<a id="a3" href="#top">this解說:https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this</a>
+#### <a id="a3" href="#top">this解說:https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this</a>
 ```
 **Javascript裡的this看的是究竟是誰調用該函式，而不是看該函式被定義在哪個物件內**
 **調用函式的前方並未有物件，則函式內this就指向全域物件**
@@ -304,13 +304,13 @@ ex:
 		obj1.f.call(obj2); //利用call指派f的this為指向obj2，故輸出為30
 ```
 <=================================================><br>
-<a id="a4" href="#top">取得類型名稱</a>
+#### <a id="a4" href="#top">取得類型名稱</a>
 ```
 typeof 放入欲取得的類型
 ex:console.log(typeof "") => 輸出:string 
 ```
 <====================================================><br>
-<a id="a5" href="#top">改變css樣式</a>
+#### <a id="a5" href="#top">改變css樣式</a>
 ```
 function change(){
 	document.getElementById('demo').style.fontSize='35px';//改變字體大小
@@ -324,7 +324,7 @@ function change(){
 }
 ```
 <=======================================================><br>
-<a id="a6" href="#top">輸出的文字的各個方式(alert,console,document)</a>
+#### <a id="a6" href="#top">輸出的文字的各個方式(alert,console,document)</a>
 ```
 <script>
 x = 2 + 3 + "5" ;
@@ -336,7 +336,7 @@ console.log(5 + 6);
 </script>
 ```
 <=====================================================><br>
-<a id="a7" href="#top"> ++ 與 -- 的注意事項</a>
+#### <a id="a7" href="#top"> ++ 與 -- 的注意事項</a>
 ```
 //++--放後面:執行後再加(減),++--放前面:執行前先加(減)在輸出
 <script>
@@ -346,7 +346,7 @@ document.getElementById("demo2").innerHTML = y; //輸出6
 </script>
 ```
 <======================================================><br>
-<a id="a8" href="#top">string常用屬性</a>
+#### <a id="a8" href="#top">string常用屬性</a>
 ```
 *length:*
 <script>
@@ -412,7 +412,7 @@ function myFunction() {
 </script>
 ```
 <=======================================================><br>
-<a id="a9" href="#top">Math常用屬性</a>
+#### <a id="a9" href="#top">Math常用屬性</a>
 ```
 *.PI:*
 <script>
@@ -456,7 +456,7 @@ Math.floor(Math.random() * 10) + 1;
 </script>
 ```
 <========================================================><br>
-<a id="a10" href="#top">Date常用屬性</a>
+#### <a id="a10" href="#top">Date常用屬性</a>
 ```
 *取得今天時間*
 <script>
@@ -499,7 +499,7 @@ function checkTime(i) {
 </body>
 ```
 <============================================================><br>
-<a id="a11" href="#top">Array常用屬性</a>
+#### <a id="a11" href="#top">Array常用屬性</a>
 ```
 *.concat(可放多個array):合併陣列(依序往後加)*
 <script>
@@ -589,7 +589,7 @@ document.getElementById("demo").innerHTML = fruits.toString();//Banana,Orange,Ap
 </script>
 ```
 <====================================================><br>
-<a id="a11-2" href="#top">Array-list用法</a>
+#### <a id="a11-2" href="#top">Array-list用法</a>
 ```javascript
 
 var list = [
@@ -603,7 +603,7 @@ list.push({ date: '12/1/2011', reading: 3, id: 20056 });
 alert(list[1].date);
 ```
 <====================================================><br>
-<a id="a12" href="#top">常用的幾種迴圈與敘述(if.else if.else.break.continue,switch)</a>
+#### <a id="a12" href="#top">常用的幾種迴圈與敘述(if.else if.else.break.continue,switch)</a>
 ```
 *for:*
 var x = "", i;
@@ -653,7 +653,7 @@ for (x in person) {
 }
 ```
 <======================================================><br>
-<a id="a13" href="#top">try catch用法</a>
+#### <a id="a13" href="#top">try catch用法</a>
 ```javascript
  var txt = "";
  try {
@@ -670,7 +670,7 @@ for (x in person) {
     }
 ```
 <======================================================><br>
-<a id="a14" href="#top">Iterator用法</a>
+#### <a id="a14" href="#top">Iterator用法</a>
 ```javascript
     var c = console;
     var ai = arrayIterator(['x', 'y', 'z']); 
@@ -709,7 +709,7 @@ for (x in person) {
    
 ```
 <======================================================><br>
-<a id="a15" href="#top">function閉包用法</a>
+#### <a id="a15" href="#top">function閉包用法</a>
 ```javascript
 ex1:
 function makeAdder(x) {
@@ -773,7 +773,7 @@ alert(counter2.value()); /* Alerts 0 */
 */
 ```
 <======================================================><br>
-<a id="a16" href="#top">function callback用法</a>
+#### <a id="a16" href="#top">function callback用法</a>
 ```javascript
 //首先先技術解釋
 function aaa(){
@@ -849,13 +849,13 @@ meowSay.apply({say:'MEOW!!'} , [1 , 2 , 3])
 　　foo.call(this, arg1,arg2,arg3) == foo.apply(this, arguments)==this.foo(arg1, arg2, arg3)
 ```
 <==================================================><br>
-<a id="a17" href="#top">convert the js object to JSON</a><br/>
+#### <a id="a17" href="#top">convert the js object to JSON</a><br/>
 ```javascript
 var j={"name":"binchen"};
 JSON.stringify(j); // '{"name":"binchen"}'
 ```
 <==================================================><br>
-<a id="a18" href="#top">Check string matches a regex in JS</a><br/>
+#### <a id="a18" href="#top">Check string matches a regex in JS</a><br/>
 ```javascript
 /^([a-z0-9]{5,})$/.test('abc1');   // false
 
@@ -864,7 +864,7 @@ JSON.stringify(j); // '{"name":"binchen"}'
 /^([a-z0-9]{5,})$/.test('abc123');   // true
 ```
 <==================================================><br>
-<a id="a19" href="#top">IIFE用法:即刻執行函數(immediately invoked function expression)</a><br/>
+#### <a id="a19" href="#top">IIFE用法:即刻執行函數(immediately invoked function expression)</a><br/>
 ```javascript
 //一個一般的函式會是以下這樣
 var funcA = function(){
@@ -949,7 +949,7 @@ funcC('hello!');
 
 ```
 <==================================================><br>
-<a id="a20" href="#top">雙重function函式使用</a><br/>
+#### <a id="a20" href="#top">雙重function函式使用</a><br/>
 1.雙重函式之使用
 ```javascript
  function a(str) {
@@ -998,7 +998,7 @@ function b(aaa) {
 ```
 
 <==================================================><br>
-<a id="a21" href="#top">canvas畫圖(神奇寶貝球)</a>
+#### <a id="a21" href="#top">canvas畫圖(神奇寶貝球)</a>
 
 - 需先將html標籤寫出來 : ```<canvas id="myCanvas"></canvas>```
 - 使用js抓取標籤
@@ -1114,7 +1114,7 @@ ctx.stroke()
 ```
 
 <==================================================><br>
-<a id="a0601" href="#top">let,const變數語法</a><br/>
+#### <a id="a0601" href="#top">let,const變數語法</a><br/>
 let變數:
 ```javascript
 //let:宛如java需先宣告才能使用
@@ -1183,7 +1183,7 @@ const foo = Object.freeze({});
 foo.prop = 123;
 ```
 <==================================================><br>
-<a id="a0602" href="#top">變數解構賦值(set)</a><br/>
+#### <a id="a0602" href="#top">變數解構賦值(set)</a><br/>
 ```javascript
 舊的作法:
     let a = 1;
@@ -1280,7 +1280,7 @@ l // 'world'
 
 ```
 <==================================================><br>
-<a id="a0610" href="#top">yeild與Generator</a><br/>
+#### <a id="a0610" href="#top">yeild與Generator</a><br/>
 ```javascript
 yeild與Generator必須一起生存
 Generator函數必須物名稱前加上*:function *foo(){}
@@ -1315,7 +1315,7 @@ var foo = function *() {
     var c = foo.next(4);//c.value=4(yield (x + y)=4)
 ```
 <==================================================><br>
-<a id="a0611" href="#top">promise的使用</a><br/>
+#### <a id="a0611" href="#top">promise的使用</a><br/>
 ```javascript
 const reqPromise = async 參數 => new Promise((resolve, reject) => {
   request.get(參數, (error, response, response_body) => {
@@ -1326,484 +1326,9 @@ const reqPromise = async 參數 => new Promise((resolve, reject) => {
 }).catch(error => {
   return [error, null]
 ```
-<=====================================================><br>
-<a id="b1" href="#top">與其他語言衝突$字符號解決辦法</a>
-```
-有使用其它的 JavaScript Library 也是用 "$" 怎麼辦？有辦法，用下面這一行就解決了：
-jQuery.noConflict();
 
-比較想用 $ 來操作 jQuery 怎麼辦？也有取巧的辦法：
-(function($) {
-  // 在此區塊內我們使 $ 參照 jQuery 物件
-  // 在此區塊內使用 $ 不會與其它函式衝突
-})(jQuery);
-
-var $alias = jQuery.noConflict();
-接下來你就可以使用 $alias 取代 $。
-```
-<====================================================><br>
-<a id="b2" href="#top">基本操作與串接(Chaining)</a>
-```
-jQuery 程式碼由 $ (或jQuery) 開始 → 後面會接著圓刮號「()」→ 
-而圓刮號裡面的參數是你想叫 jQuery 幫你找什麼 (取得哪個(些)元素) → 接著是你想叫 jQuery 執行什麼動作 (或處理事件)。例如：
-// 選取 id 為 el 的元素，並綁定 onclick 事件
-// 叫jQuery將其CSS的背景顏色屬性改成灰色
-$('#el').click(function() {
-  $('#el').css('background-color', 'green');
-});  
-
-串接 (Chaining)
-在 jQuery 中，幾乎所有成員都會返回自己執行後的結果 - 
-也是一個 jQuery 物件，因此你可以連續地使用函數 (Chaining)。以下我們用一個範例來說明 Chaining 是怎麼一回事：
-
-$('#el').css('color', 'blue').css('background-color', 'red');
-上面這段程式碼由兩段函式組成：
-
-// 先將文字改成藍色
-$('#el').css('color', 'blue');
-// 再將背景顏色改為紅色
-$('#el').css('background-color', 'red');
-```
-<=======================================================><br>
-<a id="b3" href="#top">選取DOM元素</a>
-```
-#tag selector:#
-在 jQuery 中
-$('a'); // 取得頁面中所有的 <a> 標籤元素
-
-在 JavaScript DOM 中
-document.getElementsByTagName('a');
-
-
-#id selector:#
-在 jQuery 中
-$('#el'); // 取得 id 為 el 的元素
-
-在 JavaScript DOM 中
-document.getElementById('el');
-
-
-#class selector:#
-在 jQuery 中
-$('.item'); // 取得 class name 為 item 的所有元素
-
-在 JavaScript DOM 中
-document.getElementsByClassName('item');
-
-#jQuery Selectors 取回的元素的型態 (type) 是什麼？#
-jQuery 物件 ($) 會將匹配到的元素以"陣列 (array)"型態返回一個 jQuery 物件
-，也就是說你可以像下面這樣取得被匹配到元素的個數：
-
-// 我們想知道選取到幾個 <a>?
-$('a').length; // 直接用 JavaScript array 的 length 屬性取得
-$('a').size(); // 或用 jQuery object 的 size 方法
-
-ex:
-$('#container').style.display = 'none';
-// 錯誤 style is not defined
-
-$('#container').get(0).style.display = 'none';
-//正確
-
-Example:
-$('#container a'); // 取得 id 為 container 之元素其內部的所有連結 <a>
-$('div > p'); // 取得 div 父元素其下所有的 p 子元素
-$('tr:first'); // 取得第一個找到的 tr 標籤元素
-$('input[name="email"]'); // 取得其 name 屬性值為 email 的 input 元素
-
-例外:JavaScript DOM 物件 --> jQuery 物件
-反過來，如果你想將 DOM 轉為 jQuery 物件，只要將 DOM 傳入 $():
-$(domElements);
-例如：
-var $jqueryObject = $(document.getElementById('id'));
-```
-<====================================================><br>
-<a id="b4" href="#top">屬性與樣式(Attributes,CSS)</a>
-```
-#jQuery 對於 HTML Tag 屬性的操作 (Attributes)#
-#取得選取到的元素之屬性值：#
-.attr(attributeName)
-ex:
-取得第一個連結的 title 值：
-$('a').attr('title');
-
-#替選取到的元素設定屬性值：#
-.attr(attributeName, value)
-ex:
-替所有連結的 title 屬性設為 Enjoy jQuery：
-$('a').attr('title', 'Enjoy jQuery');
-
-#key/value object 的方式來替所有匹配到的元素設定多個屬性值：#
-.attr(attributes)
-ex:
-同時改變 alt 和 title 屬性：
-$( "#greatphoto" ).attr({
-    alt: "Beijing Brush Seller",
-    title: "photo by Kelly Clark"
-});
-
-#移除元素屬性也很簡單：#
-.removeAttr(attributeName)
-ex:
-移除所有連結的 title 屬性：
-$('a').removeAttr('title');
-// 上面同等於這樣做
-$('a').attr('title', null);
-
-#jQuery 對 class 這個屬性有特別的處理#
-對於 class，jQuery 另外提供個別的函式來作 class 增刪的動作
-
-增加 class:
-.addClass(className)
-ex:
-幫所有的段落加入 selected 和 highlight 類別：
-$('p').addClass('selected highlight');//用空白隔開多個 class。
-
-移除 class：
-.removeClass(className)
-ex:
-移除 id 為 wrapper 的元素其 blue 這個類別：
-$('#wrapper').removeClass('blue');
-
-#val，一個很常用到的方法，用來取得和設定表單元素的 value 值：#
-.val() // get
-.val(value) // set
-例如，取得表單元素的值：
-
-// 取得下拉選單 (select box) 的值
-$('select.foo').val();
-
-// 取得 checkbox 欄位的選取值
-$('input:checkbox:checked').val();
-
-// 取得 radio 欄位的選取值
-$('input:radio[name=bar]:checked').val();
-例如，設定表單元素的值：
-
-// HTML
-<input type="text">
-// 設定欄位值
-$('input').val('Hello World!');
-// 設定後的結果
-<input type="text" value="Hello World!">
-
-#樣式的操作 (CSS)#
-取得第一個段落的字體顏色：
-$('p').css('color'); 
-
-替所有段落的透明度設為半透明：
-$('p').css('opacity', '0.5');
-// 設 opacity 就可以，jQuery 已經幫你處理好跨瀏覽器問題
-
-替所有段落的字體設為紅色，背景設為藍色：(屬性中包含 -，記得加上引號)
-$('p').css({
-  color: 'red',
-  'background-color': 'blue'
-});
-
-元素的位置及寬高 - 常用的屬性獨立出來
-.width() // 取得元素寬度
-.width(value) // 設定元素寬度
-.height() // 取得元素高度
-.height(value) // 設定元素高度
-
-*取得的值是元素內容寬、高度，不包含 padding, border, margin。*
-ex:
-取得第一個匹配到的段落元素高度 (px) (無參數)
-$('p').height();
-
-設定每個匹配到的段落元素其高度設為 100px (沒指定單位時預設為 px) (有參數)
-$('p').height(100);
-```
-<========================================================><br>
-<a id="b5" href="#top">篩選元素 (Traversing)</a>
-```
-#過濾元素 (Filtering)#
-jQuery 有提供一些函數幫助我們方便的「濾出」我們要的目標元素：
-
-#取得第 index 個元素 (index 從 0 開始)#
-.eq( index )
-ex:
-取得匹配的第 3 個元素
-$('p').eq(2);
-*相較於 .get(index) 得到的是 DOM 物件；.eq(index) 則是 jQuery 物件。*
-
-#找出所有符合表達式條件的元素 (可用逗號分開多個 selector)#
-.filter(selector)
-ex:
-取得類別為 highlight 的所有段落元素：
-$('p').filter('.highlight');
-
-#刪除所有符合表達式條件的元素#
-.not(selector)
-ex:
-從選取到的段落元素中，刪除掉類別為 green 的及 id 為 blueone 的元素：
-$('p').not('.green, #blueone');
-
-#元素 (節點) 間位置的相互關係:#
-*依縱向關係來查訪 (Finding):*
-// 取得上一階層的父元素
-.parent([selector])
-
-// 取得全部的父元素集合 (祖先元素)
-.parents([selector])
-
-// 取得(僅)下一階層的所有子元素之集合 (不含 text nodes)
-.children([selector])
-
-// 取得全部的子元素 (含 text nodes)
-// 也可以用來取得 iframe 的 content document
-.contents()
-ex:
-// 將 li 的父元素 (可能是 <ul> 或 <ol>) 背景改為紅色
-$('li').parent().css('background-color', 'red');
-// 將 li 的所有祖先元素背景都改為紅色 (直到 <html> 元素)
-$('li').parents().css('background-color', 'red');
-// 將 li 的所有 <p> 祖先元素背景都改為紅色
-$('li').parents('p').css('background-color', 'red');
-// 將有 .selected class 的 div 所有子元素顏色改為藍色
-$('div').children('.selected').css('color', 'blue');
-
-*依橫向關係來查訪 (Finding):*
-// selector 用來過濾，如果我們只要符合條件的元素
-// 取得其後緊鄰的兄弟元素 (同輩元素)
-.next([selector])
-
-// 取得從下一個直到最後一個同輩元素
-.nextAll([selector])
-
-// 前一個同輩元素
-.prev([selector])
-
-// 從前一個直到最開頭的同輩元素
-.prevAll([selector])
-
-// 取得其所有同輩元素的集合
-.siblings([selector])
-
-#依表達式條件來查訪元素 (Finding)#
-.find(selector)
-ex:
-我們想取得段落下的 span 元素：
-// HTML
-<p><span>Hello</span> World</p>
-// jQuery
-$('p').find('span');
-
-//如果寫以下語句,則會直接將p底下span裡所有文字給輸出(無法用get(0))
-$('p').find('span').text();
-```
-<========================================================><br>
-<a id="b6" href="#top">DOM 操作 (Manipulation)</a>
-```
-#改變元素內容 (Changing Contents)#
-.html() - 類似 JavaScript DOM 中的 innerHTML
-// 取得匹配元素的 HTML 內容 (無參數)
-.html()
-
-// 設定匹配元素的HTML內容 (有參數)
-.html(htmlString)
-
-ex:
-// HTML
-<div></div>
-// jQuery
-$('div').html('<p>Hello World</p>'); 
-// 得到的結果
-[<div><p>Hello World</p></div>]
-
-#.text() 純文字內容#
-// 取得一個字串包含著所有匹配元素的純文字內容 (無參數)
-.text()
-
-// 例如 HTML
-<p><em>Test1.</em>Test12.</p><p>Test3</p>
-// jQuery
-$('p').text();
-// 得到的結果
-Test1.Test2.Test3
-
-// 設定所有匹配元素的純文字內容 (有參數)
-// text 裡面的 "<" 與 ">" 會自動被轉成 HTML entities
-.text(text)
-
-#插入內容 (Inserting)#
-相關函式有 .append(), .prepend(), .before(), .after() 等。
-
-.append(content) - 在每個匹配的元素內部最後面加入內容 (內部插入)
-// 例如 HTML
-<p>I would like to say: </p> 
-// jQuery
-$('p').append('<b>Hello</b>'); 
-// 得到的結果
-[<p>I would like to say: <b>Hello</b></p>]
-
-.prepend(content) - 在每個匹配的元素內部最前面加入... (內部插入)
-// 例如 HTML
-<p>I would like to say: </p> 
-// jQuery
-$('p').prepend('<b>Hello</b>'); 
-// 得到的結果
-[<p><b>Hello</b>I would like to say: </p>]
-
-.before(content) - 在每個匹配的元素前面加入... (外部插入)
-// 例如 HTML
-<p>I would like to say: </p> 
-// jQuery codes
-$('p').before('<b>Hello</b>'); 
-// 得到的結果
-[<b>Hello</b><p>I would like to say: </p>]
-
-.after(content) - 在每個匹配的元素後面加入... (外部插入)
-// 例如 HTML
-<p>I would like to say: </p> 
-// jQuery
-$('p').after('<b>Hello</b>');
-// 得到的結果
-[<p>I would like to say: </p><b>Hello</b>]
-
-#移動元素 (Moving)#
-如果在前面這些函式的參數中帶入 "jQuery" 或 "DOM" 物件則代表移動它們。
-
-.append(jQuery or DOM)
-// 例如 HTML
-<p>I would like to say: </p><b>Hello</b>
-// jQuery
-$('p').append( $('b') );
-// 得到的結果
-[<p>I would like to say: <b>Hello</b></p>]
-
-#把自己包起來 (Inserting Around)#
-.wrap(html) - 各別包住匹配到的元素
-// 例如 HTML
-<div class="container">
-  <div class="inner">Hello</div>
-  <div class="inner">Goodbye</div>
-</div>
-
-// jQuery
-$('.inner').wrap('<div class="new"></div>');
-
-// 得到的結果
-<div class="container">
-  <div class="new">
-    <div class="inner">Hello</div>
-  </div>
-  <div class="new">
-    <div class="inner">Goodbye</div>
-  </div>
-</div>
-
-.wrapAll(html) - 一起包住所有匹配到的元素
-// 例如 HTML
-<div class="container">
-  <div class="inner">Hello</div>
-  <div class="inner">Goodbye</div>
-</div>
-
-// jQuery
-$('.inner').wrapAll('<div class="new" />');
-
-// 得到的結果
-<div class="container">
-  <div class="new">
-    <div class="inner">Hello</div>
-    <div class="inner">Goodbye</div>
-  </div>
-</div>
-
-.wrapInner(html) - 各別包到匹配的元素裡面
-// 例如 HTML
-<div class="container">
-  <div class="inner">Hello</div>
-  <div class="inner">Goodbye</div>
-</div>
-
-// jQuery
-$('.inner').wrapInner('<div class="new"></div>');
-
-// 得到的結果
-<div class="container">
-  <div class="inner">
-    <div class="new">Hello</div>
-  </div>
-  <div class="inner">
-    <div class="new">Goodbye</div>
-  </div>
-</div>
-
-#刪除元素 (Removing)#
-.empty() - 刪除匹配到的元素其所有子節點
-// 例如 HTML
-<div class="container">
-  <div class="hello">Hello</div>
-  <div class="goodbye">Goodbye</div>
-</div>
-
-// jQuery
-$('.hello').empty();
-
-// 得到的結果
-<div class="container">
-  <div class="hello"></div>
-  <div class="goodbye">Goodbye</div>
-</div>
-
-.remove([selector]) - 從 DOM 中刪除所有匹配到的元素
-// 例如 HTML
-<div class="container">
-  <div class="hello">Hello</div>
-  <div class="goodbye">Goodbye</div>
-</div>
-
-// jQuery
-$('.hello').remove();
-
-// 得到的結果
-<div class="container">
-  <div class="goodbye">Goodbye</div>
-</div>
-
-// 我們也可以多帶入一個 selector 參數，來過濾匹配到的元素
-// 例如這樣寫和上面會得到一樣的結果
-$('div').remove('.hello');
-
-#複製元素 (Copying)#
-.clone([true]) - 複製匹配元素的副本
-// 例如 HTML
-<div class="container">
-  <div class="hello">Hello</div>
-  <div class="goodbye">Goodbye</div>
-</div>
-
-// jQuery
-$('.hello').clone().appendTo('.goodbye');
-
-// 得到的結果
-<div class="container">
-  <div class="hello">Hello</div>
-  <div class="goodbye">
-    Goodbye
-    <div class="hello">Hello</div>
-  </div>
-</div>
-
-// 但如果沒用 .clone() 則會得到這樣的結果
-<div class="container">
-  <div class="goodbye">
-    Goodbye
-    <div class="hello">Hello</div>
-  </div>
-</div>
-如果想要連綁定的事件一起複製，則加個 true 參數 .clone(true)。
-```
-<========================================================><br>
-<a id="b7" href="#top">事件處理 (Events)</a>
-```
-https://www.fooish.com/jquery/events.html
-```
 <===================================================><br>
-<a id="c1" href="#top">取得目前的row數</a>
+#### <a id="c1" href="#top">取得目前的row數</a>
 ```
 var num = document.getElementById("mytable").rows.length;
 
@@ -1822,7 +1347,7 @@ function myFunction() {
 </script>
 ```
 <=======================================================><br>
-<a id="c2" href="#top">得到select的 value</a>
+#### <a id="c2" href="#top">得到select的 value</a>
 ```
 <script type="text/javascript">
 
@@ -1842,7 +1367,7 @@ function myFunction() {
  </body>
  ```
 <======================================================><br>
-<a id="c3" href="#top">javascript = = 與 = = = 的差別:</a>
+#### <a id="c3" href="#top">javascript = = 與 = = = 的差別:</a>
 ```
 兩個等於（==）會對被判別的變數做轉換型別的動作（coercion又稱為implicit type conversion）。
 這就是爲什麽有時候不懂一個語言特性會覺得怪怪的。舉例來說：
@@ -1874,7 +1399,7 @@ NaN === NaN //false
 因此只能使用isNaN()這個Function來判別。 
 ```
 <===============================================================><br>
-<a id="c4" href="#top">鍵盤按鍵觸發:</a>
+#### <a id="c4" href="#top">鍵盤按鍵觸發:</a>
 ```
 keypress
 65～90大写
@@ -1892,7 +1417,7 @@ keypress
 	}); 
 ```
 <===========================================================><br>
-<a id="c5" href="#top">输出每个 li 元素的文本：</a>
+#### <a id="c5" href="#top">输出每个 li 元素的文本：</a>
 ```
 $("button").click(function(){
   $("li").each(function(){
@@ -1901,7 +1426,7 @@ $("button").click(function(){
 });
 ```
 <============================================================><br>
-<a id="c6" href="#top">抓取name=cancelBox的每一個(.each())input輸入框 </a>
+#### <a id="c6" href="#top">抓取name=cancelBox的每一個(.each())input輸入框 </a>
 ```
 .prop代表input裡面的屬性
 $("input[name='cancelBox']").each(function(){
@@ -1916,7 +1441,7 @@ $("input[name='cancelBox']").each(function(){
 			}
 ```
 <======================================================><br>
-<a id="c7" href="#top">將序號重新排列 </a>
+#### <a id="c7" href="#top">將序號重新排列 </a>
 ```
 	var rowCount = document.getElementById("tabContent").rows.length;
 	for(var q=0;q<rowCount;q++){
@@ -1925,7 +1450,7 @@ $("input[name='cancelBox']").each(function(){
 	};
 ```
 <=======================================================><br>
-<a id="c8" href="#top">將array裡塞入其他字串 </a>
+#### <a id="c8" href="#top">將array裡塞入其他字串 </a>
 ```
 <button onclick="myFunction()">Try it</button>
 
@@ -1951,7 +1476,7 @@ document.write(arr.join("."))
 </script>
 ```
 <==============================================================><br>
-<a id="c9" href="#top">window.open()在jsp應用 </a>
+#### <a id="c9" href="#top">window.open()在jsp應用 </a>
 :http://www.w3school.com.cn/jsref/met_win_open.asp#windowfeatures
 ```
 	function doDetailQuery(this){
@@ -1991,7 +1516,7 @@ Emr_WindowOpen.jsp:
 	<body style="background-color:#F5FFD9;">載入中，請等待...</body>
 ```
 <==============================================================><br>
-<a id="c10" href="#top">基本陣列宣告方法 </a>
+#### <a id="c10" href="#top">基本陣列宣告方法 </a>
 ```
 var person = [];
 person[0] = "John";
@@ -2001,7 +1526,7 @@ var x = person.length;         // person.length will return 3
 var y = person[0];             // person[0] will return "John"
 ```
 <================================================================><br>
-<a id="c11" href="#top">二維陣列:</a>
+#### <a id="c11" href="#top">二維陣列:</a>
 ```
 var tdtext=[];
 var i=0,j=0,d2=7;
@@ -2010,7 +1535,7 @@ for (var c = 0 ; c <= d2 ; c++) {
 }
 ```
 <==================================================================><br>
-<a id="c12" href="#top">用二維陣列存放所有text:tdtext[第幾個tr][第幾個td]</a>
+#### <a id="c12" href="#top">用二維陣列存放所有text:tdtext[第幾個tr][第幾個td]</a>
 ```
 var tdtext=[];
 var d2=7;
@@ -2032,7 +1557,7 @@ $("tr[name='trbox']").each(function(){
 }
 ```
 <====================================================================><br>
-<a id="c13" href="#top">.serialize()序列化表單值:</a>
+#### <a id="c13" href="#top">.serialize()序列化表單值:</a>
 ```
 Form.serialize($("id_form_Ajaxparam"));//將指定的form放入序列化中
 
@@ -2046,7 +1571,7 @@ $("div").text($("form").serialize());
 輸出:FirstName=Bill&LastName=Gates
 ```
 <====================================================================><br>
-<a id="c14" href="#top">eval():可计算某个字符串，并执行其中的的 JavaScript 代码。</a>
+#### <a id="c14" href="#top">eval():可计算某个字符串，并执行其中的的 JavaScript 代码。</a>
 ```
 eval("x=10;y=20;document.write(x*y)")
 
@@ -2061,7 +1586,7 @@ document.write(eval(x+17))
 27
 ```
 <======================================================================><br>
-<a id="c15" href="#top">select option新增.清空</a>
+#### <a id="c15" href="#top">select option新增.清空</a>
 ```
 var option = document.createElement("option");//若要增加很多個OPTION必須依樣新增多個
 var noteType = document.getElementById("SELECT ID");
@@ -2069,7 +1594,7 @@ noteType.options.length = 0;//清空選項
 noteType.add(option);//新增選項
 ```
 <======================================================================><br>
-<a id="c16" href="#top">避免Enter直接submit</a>
+#### <a id="c16" href="#top">避免Enter直接submit</a>
 ```
 if (event.keyCode == 13) 
 {
@@ -2077,17 +1602,17 @@ event.returnValue = false;
 }
 ```
 <=======================================================================><br>
-<a id="c17" href="#top">增加row於table的第一行</a>
+#### <a id="c17" href="#top">增加row於table的第一行</a>
 ```
 $("table名").prepend("<tr></tr>");
 ```
 <=======================================================================><br>
-<a id="c18" href="#top">當按下enter時執行doquery函數</a>
+#### <a id="c18" href="#top">當按下enter時執行doquery函數</a>
 ```
 onkeydown="e = window.event;(e.keyCode==13)?doQuery():false;"	
 ```
 <=======================================================================><br>
-<a id="c19" href="#top">array .join方法:返回字串 .push:加入陣列</a>
+#### <a id="c19" href="#top">array .join方法:返回字串 .push:加入陣列</a>
 ```
 var AjaxParam = new Array();
 	document.getElementById("id_div_Ajaxparam").innerHTML = "";
@@ -2104,7 +1629,7 @@ var AjaxParam = new Array();
 	form_tab.submit();	
 ```
 <=====================================================================><br>
-<a id="c20" href="#top">若name或id只有一個時可以直接使用name呼叫屬性</a>
+#### <a id="c20" href="#top">若name或id只有一個時可以直接使用name呼叫屬性</a>
 ```
 <form id='id_form_Ajaxparam' name='form_tab'></form>
 
@@ -2114,7 +1639,7 @@ form_tab.action = "<%=request.getContextPath()%>/html/servlet/HttpDispatcher/Emr
 form_tab.submit();
 ```
 <=====================================================================><br>
-<a id="c21" href="#top">jQuery收合延展功能```:http://jsfiddle.net/eK8X5/10885/```</a>
+#### <a id="c21" href="#top">jQuery收合延展功能```:http://jsfiddle.net/eK8X5/10885/```</a>
 ```
 HTML:
 <div class="container">
@@ -2158,13 +1683,13 @@ $(".header").click(function () {
 });
 ```
 <================================================================><br>
-<a id="c22" href="#top">字串拆解:</a>
+#### <a id="c22" href="#top">字串拆解:</a>
 ```
 //代表從0開始屬到第三個開始擷取後五個字元
 idList.substr(3,5);
 ```
 <=================================================================><br>
-<a id="c23" href="#top">用name檢查多個checkbox是否勾選:</a>
+#### <a id="c23" href="#top">用name檢查多個checkbox是否勾選:</a>
 ```
 //因有多個name=SheetNo的checkbox
 var sheetList = document.getElementsByName('SheetNo');
@@ -2181,7 +1706,7 @@ var sheetList = document.getElementsByName('SheetNo');
 	}
 ```
 <==================================================================><br>
-<a id="c24" href="#top">處理javascript浮點數精準問題:</a>
+#### <a id="c24" href="#top">處理javascript浮點數精準問題:</a>
 ```
 //浮點數相加
 function FloatAdd(arg1, arg2)
@@ -2225,7 +1750,7 @@ function FloatDiv(arg1, arg2)
 }
 ```
 <=================================================================><br>
-<a id="c25" href="#top">轉換溫度(零式與攝氏):</a>
+#### <a id="c25" href="#top">轉換溫度(零式與攝氏):</a>
 ```
 <p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
 
@@ -2245,7 +1770,7 @@ function convert(degree) {
 </script>
 ```
 <===============================================================><br>
-<a id="c26" href="#top">跳轉頁面:</a>
+#### <a id="c26" href="#top">跳轉頁面:</a>
 ```
 history.go() 方法可以用來明確指定瀏覽器要回去幾頁。
 
@@ -2266,7 +1791,7 @@ history.go(1);
 history.go(-2);
 ```
 <===================================================================><br>
-<a id="c27" href="#top">window(self,top,parent)知識</a>
+#### <a id="c27" href="#top">window(self,top,parent)知識</a>
 ```
 window.self
 
@@ -2295,7 +1820,7 @@ document.write( "当前窗口是否在一个框架中："+b );
 </script>
 ```
 <===================================================================><br>
-<a id="c28" href="#top">javascript:讀取文字檔檔案</a>
+#### <a id="c28" href="#top">javascript:讀取文字檔檔案</a>
 ```
 You need to check for status 0 
 (as when loading files locally with XMLHttpRequest, you don't get a status returned because it's not from a Webserver)
@@ -2322,7 +1847,7 @@ And specify file:// in your filename:
 readTextFile("file:///C:/your/path/to/file.txt");
 ```
 <===================================================================><br>
-<a id="c29" href="#top">javascript:製作基本頁籤</a>
+#### <a id="c29" href="#top">javascript:製作基本頁籤</a>
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -2391,7 +1916,7 @@ function MouseOverTab(Index)
 </script>
 ```
 <===================================================================><br>
-<a id="c30" href="#top">fullcalendar使用範例</a>
+#### <a id="c30" href="#top">fullcalendar使用範例</a>
 ```
 <!DOCTYPE html>
 <html>
@@ -2447,3 +1972,5 @@ function MouseOverTab(Index)
 </body>
 </html>
 ```
+
+<a href="#top">回TOP</a>
