@@ -22,7 +22,7 @@
     - 於project 的 External Libraries 選種添加的庫點右鍵 -> Library Properties...可看到下載位址
 - 依賴庫的添加網站方式介紹：
     - Android Studio是從build.gradle裡面定義的Maven倉庫服務器上下載library
-    - jcenter就是一個標準的Android library文件服務器，通過gradle導入的jar包皆從http：//bintray.com/bintray/jcenter 這個倉庫上抓下來的。
+    - jcenter就是一個標準的Android library文件服務器，通過gradle導入的jar包皆從http://bintray.com/bintray/jcenter 這個倉庫上抓下來的。
     - 若網站上沒有，則無法通過gradle方式來導入。
 
 ### 依賴範圍(Project Structure->Dependencies中的Scrope)
