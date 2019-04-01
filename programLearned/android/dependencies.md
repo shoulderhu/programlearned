@@ -33,4 +33,18 @@
     - Test compile：針對單元測試代碼的編譯編譯以及最終打包測試apk時有效，而對正常的debug或者release apk包不起作用。
     - Debug compile：針對debug模式的編譯和最終的debug apk打包
     - Release compile：針對Release模式的編譯和最終的Release apk打包。
+    
+### gradle 引入包的幾種方式:
+- 1.引入一個jar包：
+dependencies {
+    compile files('libs/domoarigato.jar')
+}
+
+- 2.引入libs里全部的jar包：
+dependencies {
+       compile fileTree('libs')
+       //默認情況下
+       compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
 
