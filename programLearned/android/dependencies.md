@@ -36,15 +36,21 @@
     
 ### gradle 引入包的幾種方式:
 - 1.引入一個jar包：
+
+```
 dependencies {
     compile files('libs/domoarigato.jar')
 }
+```
 
 - 2.引入libs里全部的jar包：
+
+```
 dependencies {
        compile fileTree('libs')
        //默認情況下
        compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+```
 
 
