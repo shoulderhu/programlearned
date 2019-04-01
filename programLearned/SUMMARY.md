@@ -48,6 +48,7 @@
 * [Android 筆記](android/README.md)
     * [安裝與說明](android/begin.md)
     * [專案結構說明](android/structure.md)
+    * [新增依賴庫的三種方式](android/dependencies.md)
     * [掃描器使用說明](android/scanner.md)
     * [定時登出](android/timerLogOut.md)
     * [WebView使用介紹](android/webView.md)
