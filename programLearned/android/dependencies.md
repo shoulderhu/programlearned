@@ -35,22 +35,38 @@
     - Release compile：針對Release模式的編譯和最終的Release apk打包。
     
 ### gradle 引入包的幾種方式:
-- 1.引入一個jar包：
+- 引入jar
+    - 1.引入一個jar包：
 
-```
-dependencies {
-    compile files('libs/domoarigato.jar')
-}
-```
+    ```
+    dependencies {
+        compile files('libs/domoarigato.jar')
+    }
+    ```
 
-- 2.引入libs里全部的jar包：
+    - 2.引入libs里全部的jar包：
 
-```
-dependencies {
-       compile fileTree('libs')
-       //默認情況下
-       compile fileTree(dir: 'libs', include: ['*.jar'])
-}
-```
+    ```
+    dependencies {
+           compile fileTree('libs')
+           //默認情況下
+           compile fileTree(dir: 'libs', include: ['*.jar'])
+    }
+    ```
+- 引入aar
+    - 引入aar文件(需先創立aars資料夾)：
+    
+    ```
+    repositories {
+        flatDir {
+            dirs 'aars' 
+        }
+    }
+    
+    dependencies {
+        //在aars文件夾下，添加一個叫做libraryname的文件，且其後綴是aar的作為依賴
+       compile(name:'libraryname', ext:'aar')
+    }
+    ```
 
 
