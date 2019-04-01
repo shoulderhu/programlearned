@@ -58,6 +58,7 @@
     
     ```
     repositories {
+        //先將aars資料夾設為依賴庫
         flatDir {
             dirs 'aars' 
         }
