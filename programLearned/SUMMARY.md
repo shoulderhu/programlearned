@@ -54,6 +54,7 @@
     * [WebView使用介紹](android/webView.md)
     * [surfaceView使用摘錄](android/view&surfaceView.md)
     * [內網自動更新](android/autoUpdate.md)
+    * [客製化彈出視窗](android/customDialog.md)
     * [Gradle 筆記](android/gradle/README.md)
     * [參考資料](android/source.md)
 * [Ios 筆記](ios/README.md)
