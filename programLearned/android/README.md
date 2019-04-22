@@ -25,5 +25,6 @@ Key alias: "androiddebugkey"
 Key password: "android"
 CN: "CN=Android Debug,O=Android,C=US"
 ```
+- 相關連結 : https://stackoverflow.com/questions/18589694/i-have-never-set-any-passwords-to-my-keystore-and-alias-so-how-are-they-created
 
 
