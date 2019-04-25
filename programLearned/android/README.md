@@ -27,7 +27,7 @@ CN: "CN=Android Debug,O=Android,C=US"
 ```
 - 相關連結 : <a href="https://stackoverflow.com/a/18590149/9151543">debug.keystore keyContent</a>
 ---
-## 以下為視為重要的解答資訊
+## 以下為可能常用之重要的解答
 
 ### Android: how to wait AsyncTask to finish in MainThread?
 solution:https://stackoverflow.com/a/13079926/9151543
