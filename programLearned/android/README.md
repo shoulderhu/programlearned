@@ -26,6 +26,45 @@ Key password: "android"
 CN: "CN=Android Debug,O=Android,C=US"
 ```
 - 相關連結 : <a href="https://stackoverflow.com/a/18590149/9151543">debug.keystore keyContent</a>
+---
+## 以下為視為重要的解答資訊
+
+### Android: how to wait AsyncTask to finish in MainThread?
+solution:https://stackoverflow.com/a/13079926/9151543
+
+```java
+class OpenWorkTask extends AsyncTask {
+
+    @Override
+    protected Boolean doInBackground(String... params) {
+        // do something
+        return true;
+    }
+
+    @Override
+    protected void onPostExecute(Boolean result) {
+        // The results of the above method
+        // Processing the results here
+        myHandler.sendEmptyMessage(0);
+    }
+
+}
+
+Handler myHandler = new Handler() {
+
+    @Override
+    public void handleMessage(Message msg) {
+        switch (msg.what) {
+        case 0:
+            // calling to this function from other pleaces
+            // The notice call method of doing things
+            break;
+        default:
+            break;
+        }
+    }
+};
+```
 
 
 
